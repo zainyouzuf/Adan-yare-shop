@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* Navbar */
+
+header{
+    background:#0d6efd;
+    padding:20px 8%;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd43b;
+}
+
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url("images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin:20px;
+    font-size:18px;
+}
+
+.btn{
+    background:#ffd43b;
+    color:black;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    display:inline-block;
+}
+
+
+/* Sections */
+
+section{
+    padding:70px 10%;
+}
+
+section h1,
+section h2{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:25px;
+}
+
+section p{
+    text-align:center;
+    line-height:1.8;
+}
+
+
+/* Cards */
+
+.service-box,
+.product-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+
+.card,
+.product{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    text-align:center;
+    transition:.3s;
+}
+
+
+.card:hover,
+.product:hover{
+    transform:translateY(-10px);
+}
+
+
+/* Products Images */
+
+.product img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+
+.product button,
+.contact-form button{
+
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:25px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+
+.product button:hover,
+.contact-form button:hover{
+    background:#084298;
+}
+
+
+/* Contact */
+
+.contact-info{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:30px;
+}
+
+
+.contact-form{
+    max-width:600px;
+    margin:auto;
+}
+
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+
+}
+
+
+/* Footer */
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:35px;
+}
+
+footer p{
+    margin-top:10px;
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:20px;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+}
